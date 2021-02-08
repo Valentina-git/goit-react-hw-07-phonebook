@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -23,7 +22,7 @@ const ContactList = () => {
 
   return (
     <ContactListWrapper>
-      <TransitionGroup component="ul" classNames="list">
+      <TransitionGroup component="ul" classnames="list">
         {contacts
           .filter(item =>
             item.name.toLowerCase().includes(filter.toLowerCase()),
@@ -36,11 +35,6 @@ const ContactList = () => {
       </TransitionGroup>
     </ContactListWrapper>
   );
-};
-
-ContactList.propTypes = {
-  filter: PropTypes.string.isRequired,
-  contacts: PropTypes.array.isRequired,
 };
 
 export default ContactList;

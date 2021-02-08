@@ -1,8 +1,8 @@
 import { createAction } from '@reduxjs/toolkit';
 
 export const addContactRequest = createAction('phonebook/addRequest');
-export const AddContactSuccess = createAction('phonebook/addSuccess');
-export const AddContactError = createAction('phonebook/addError');
+export const addContactSuccess = createAction('phonebook/addSuccess');
+export const addContactError = createAction('phonebook/addError');
 
 export const deleteContactRequest = createAction('phonebook/deleteRequest');
 export const deleteContactSuccess = createAction('phonebook/deleteSuccess');

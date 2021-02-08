@@ -6,20 +6,20 @@ const ContactListWrapper = styled.div`
   li:not(:last-child) {
     margin-bottom: 10px;
   }
-  .myListItem-enter {
+  .myList-enter {
     opacity: 0;
     transform: translateX(-100%);
   }
-  .myListItem-enter-active {
+  .myList-enter-active {
     opacity: 1;
     transform: translateX(0);
     transition: all 250ms;
   }
-  .myListItem-exit {
+  .myList-exit {
     opacity: 1;
     transform: translateX(0);
   }
-  .myListItem-exit-active {
+  .myList-exit-active {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 250ms;
